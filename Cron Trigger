@@ -1,0 +1,44 @@
+Seconds Minutes Hours Day_of_month Month Day_of_week Optional_year
+
+
+Name	Values	Special Characters
+Seconds	0–59	None
+Minutes	0–59	None
+Hours	0–23	, - * /
+Day_of_month	1–31	, - * ? / L W
+Month	1–12 or the following:
+JAN
+FEB
+MAR
+APR
+MAY
+JUN
+JUL
+AUG
+SEP
+OCT
+NOV
+DEC
+, - * /
+Day_of_week	1–7 or the following:
+SUN
+MON
+TUE
+WED
+THU
+FRI
+SAT
+, - * ? / L #
+optional_year	null or 1970–2099	, - * /
+
+
+
+0 0 13 * * ?	Class runs every day at 1 PM.
+0 0 22 ? * 6L	Class runs the last Friday of every month at 10 PM.
+0 0 10 ? * MON-FRI	Class runs Monday through Friday at 10 AM.
+0 0 20 * * ? 2010	Class runs every day at 8 PM during the year 2010.
+
+
+
+
+https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_scheduler.htm
