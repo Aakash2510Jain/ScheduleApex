@@ -40,6 +40,28 @@ optional_year	null or 1970–2099	, - * /
 
 
 
+Exprssion	Description
+0 0 13 * * ?	Run every day at 1 PM.
+0 0 22 ? * 6L	Run the last Friday of every month at 10 PM.
+0 0 0 ? * * *	At 12:00 AM every day
+0 0 10 ? * MON-FRI	Run Monday through Friday at 10 AM.
+0 0 20 * * ? 2024	Run every day at 8 PM during the year 2024.
+0 0 12 * * ?	At 12:00 PM every day
+0 0 10 ? * *	At 10.00 AM every day
+0 0 10 * * ?	At 10.00 AM every day
+0 0 10 * * ? *	at 10.00 AM every day
+0 0 15 ? * * *	At 3:00 PM every day
+0 30 * * * ?	Every 30 minutes
+0 0 17 ? * 6L	Runs the last Friday of every month at 5:00 PM.
+0 25 5 15 * ?	At 5:25 AM on the 15th day of every month
+0 15 17 ? * 6#3	At 5:15 PM on the third Friday of every month
+0 0-5 15 * * ?	Every minute starting at 3:00 PM and ending at 3:05 PM, every day
+0 15 17 ? * MON-FRI	At 5:15 PM every Monday, Tuesday, Wednesday, Thursday and Friday
+0 0 23 * * ? 2022	Runs every day at 11:00 PM during the year 2022.
+
+
+
+
 https://salesforcescool.blogspot.com/2021/05/schedule-apex-to-run-every-5-or-10.html
 
 https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_scheduler.htm
